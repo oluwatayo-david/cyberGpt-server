@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
