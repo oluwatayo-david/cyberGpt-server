@@ -10,12 +10,8 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL, // Replace with the CLIENT_URL environment variable
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-  })
-);
+app.use(cors())
+
 app.use(express.json());
 
 const connect = async () => {
